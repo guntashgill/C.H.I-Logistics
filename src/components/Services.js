@@ -3,7 +3,6 @@ import React from 'react';
 
 const Services = () => {
   const services = [
-    { title: 'OTR Solutions', description: 'Delivering excellence in over-the-road transportation.', image: 'https://via.placeholder.com/300x200' },
     { title: 'Dedicated', description: 'Tailored to meet your unique shipping needs.', image: 'https://via.placeholder.com/300x200' },
     { title: 'Expedited Team', description: 'Swift and efficient delivery through dedicated teams.', image: 'https://via.placeholder.com/300x200' },
     { title: '24/7 Dispatch', description: 'Round-the-clock support for your shipments.', image: 'https://via.placeholder.com/300x200' },
