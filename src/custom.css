@@ -8,7 +8,7 @@ body {
   .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #006d77 !important; /* Dark teal */
+    color: #004d40 !important; /* Darker teal */
   }
   
   .hero {
@@ -32,7 +32,7 @@ body {
   }
   
   .btn-primary {
-    background-color: #006d77; /* Dark teal */
+    background-color: #004d40; /* Darker teal */
     border: none;
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
@@ -40,95 +40,10 @@ body {
   }
   
   .btn-primary:hover {
-    background-color: #004d55; /* Darker shade of teal */
+    background-color: #003730; /* Even darker shade of teal for hover */
   }
   
   .services {
-    padding: 4rem 0;
-  }
-  
-  .card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card img {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-title {
-    color: #006d77; /* Dark teal */
-  }
-  
-  .footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 2rem 0;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-
-  .section-image {
-    margin: 2rem 0; /* Space above and below the image */
-    max-height: 600px; /* Increase max height for larger display */
-    overflow: hidden; /* Ensures the image does not overflow the container */
-  }
-  
-  .section-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    max-height: 700px; /* Set maximum height */
-    object-fit: cover; /* Cover the container without distortion */
-  }
-  
-  /* Optional: Make image responsive for larger screens */
-  @media (min-width: 768px) {
-    .section-image {
-      max-height: 800px; /* Increase height on larger screens */
-    }
-  }
-
-  .about-us {
-    padding: 6rem 2rem; /* Increase padding for more space */
-    background-color: #e9ecef; /* Light background color */
-    text-align: center; /* Center text for a balanced look */
-  }
-  
-  .about-us h2 {
-    font-size: 3rem; /* Larger font size for the heading */
-    color: #343a40; /* Dark text color */
-    margin-bottom: 1.5rem; /* Increase space below the heading */
-  }
-  
-  .about-us p {
-    font-size: 1.25rem; /* Larger font size for paragraph text */
-    color: #6c757d; /* Gray text color */
-    line-height: 1.8; /* Increase line height for readability */
-    margin-bottom: 2rem; /* Space between paragraphs */
-  }
-  
-  .about-us .row {
-    justify-content: center; /* Center content within the grid */
-  }
-  
-  /* Optional: Enhance layout on larger screens */
-  @media (min-width: 992px) {
-    .about-us {
-      padding: 8rem 4rem; /* Further increase padding on larger screens */
-    }
-  }
-
-  /* Enlarge the Services section */
-.services {
     padding: 6rem 2rem; /* Increase padding for more space */
     background-color: #f8f9fa; /* Neutral background color */
   }
@@ -153,7 +68,7 @@ body {
   
   .services .card-title {
     font-size: 1.5rem; /* Larger title size */
-    color: #006d77; /* Dark teal for titles */
+    color: #004d40; /* Darker teal for titles */
     margin-top: 1rem; /* Space above title */
   }
   
@@ -168,18 +83,102 @@ body {
     object-fit: cover;
   }
   
-  /* Optional: Enhance layout on larger screens */
   @media (min-width: 992px) {
     .services {
       padding: 8rem 4rem; /* Further increase padding on larger screens */
     }
   }
 
-
-
-.section-image2 {
+  /* Areas Serviced Section */
+.areas-serviced {
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+    border-radius: 10px;
+  }
+  
+  .areas-serviced h2 {
+    font-size: 2.5rem;
+    color: #004d40; /* Dark teal for headings */
+    margin-bottom: 1.5rem;
+  }
+  
+  .areas-serviced p {
+    font-size: 1.25rem;
+    color: #6c757d; /* Gray text color */
+    margin-bottom: 2rem;
+  }
+  
+  .areas-serviced img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  
+  
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 2rem 0;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .section-image {
     margin: 2rem 0; /* Space above and below the image */
-    max-height: 600px; /* Set a max height for a larger display */
+    max-height: 800px; /* Increase max height for larger display */
+    overflow: hidden; /* Ensures the image does not overflow the container */
+  }
+  
+  .section-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 800px; /* Set maximum height */
+    object-fit: cover; /* Cover the container without distortion */
+  }
+  
+  @media (min-width: 768px) {
+    .section-image {
+      max-height: 800px; /* Increase height on larger screens */
+    }
+  }
+  
+  .about-us {
+    padding: 6rem 2rem; /* Increase padding for more space */
+    background-color: #e9ecef; /* Light background color */
+    text-align: center; /* Center text for a balanced look */
+  }
+  
+  .about-us h2 {
+    font-size: 3rem; /* Larger font size for the heading */
+    color: #343a40; /* Dark text color */
+    margin-bottom: 1.5rem; /* Increase space below the heading */
+  }
+  
+  .about-us p {
+    font-size: 1.25rem; /* Larger font size for paragraph text */
+    color: #6c757d; /* Gray text color */
+    line-height: 1.8; /* Increase line height for readability */
+    margin-bottom: 2rem; /* Space between paragraphs */
+  }
+  
+  .about-us .row {
+    justify-content: center; /* Center content within the grid */
+  }
+  
+  @media (min-width: 992px) {
+    .about-us {
+      padding: 8rem 4rem; /* Further increase padding on larger screens */
+    }
+  }
+  
+  /* Section for another image between services and contact */
+  .section-image2 {
+    margin: 2rem 0; /* Space above and below the image */
+    max-height: 800px; /* Set a max height for a larger display */
     overflow: hidden; /* Ensure the image fits within the container */
   }
   
@@ -187,16 +186,69 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    max-height: 700px; /* Set max height to control size */
+    max-height: 800px; /* Set max height to control size */
     object-fit: cover; /* Ensure the image covers the container without distortion */
   }
   
-  /* Optional: Make image larger on larger screens */
   @media (min-width: 768px) {
     .section-image2 {
       max-height: 800px; /* Increase height for larger screens */
     }
   }
+.contact-form {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 4rem 0;
+  }
   
-
+  .contact-form h2 {
+    font-size: 2.5rem;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form .form-control {
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+  }
+  
+  .contact-form .btn {
+    background-color: #004d40; /* Dark teal for buttons */
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .contact-form .btn:hover {
+    background-color: #003730; /* Darker teal on hover */
+  }
+  
+  .contact-info h5 {
+    font-size: 1.75rem;
+    color: #004d40; /* Dark teal */
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info ul {
+    padding: 0;
+  }
+  
+  .contact-info ul li {
+    font-size: 1.1rem;
+    color: #343a40;
+    list-style: none;
+  }
+  
+  .contact-info ul li .me-2 {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .contact-info .text-muted {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
   

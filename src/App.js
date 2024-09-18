@@ -22,9 +22,7 @@ function App() {
       <Services />
       <SectionImage2 />  {/* Image between Services and Contact */}
       <Contact />
-      <Routes>
-        <Route path="/apply" element={<ApplyPage />} />
-      </Routes>
+      <ApplyPage />
     </Router>
   );
 }
