@@ -7,6 +7,8 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import AboutUs from './components/AboutUs';
 import ApplyPage from './components/ApplyPage';
+import SectionImage from './components/SectionImage';  // Image between About and Services
+import SectionImage2 from './components/SectionImage2'; // New Image Component
 import './custom.css';
 
 function App() {
@@ -14,11 +16,12 @@ function App() {
     <Router>
       <Header />
       <Hero />
-      {/* These sections are included in the main page, accessible via anchor links */}
+      {/* Main page sections with images in between */}
       <AboutUs />
+      <SectionImage />  {/* Image between About Us and Services */}
       <Services />
-      <Contact />\
-      {/* Separate route for the apply page */}
+      <SectionImage2 />  {/* Image between Services and Contact */}
+      <Contact />
       <Routes>
         <Route path="/apply" element={<ApplyPage />} />
       </Routes>
@@ -27,3 +30,5 @@ function App() {
 }
 
 export default App;
+
+
