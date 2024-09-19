@@ -42,16 +42,16 @@ const Contact = () => {
                   <FaPhone className="me-2" /> Call or Text: (559) 497-1301
                 </li>
                 <li className="mb-3">
-                  <FaEnvelope className="me-2" /> Email: info@yourdomain.com
+                  <FaEnvelope className="me-2" /> Email: accounts@chilogistic.com
                 </li>
                 <li className="mb-3">
-                  <FaEnvelope className="me-2" /> Dispatch: dispatch@yourdomain.com
+                  <FaEnvelope className="me-2" /> Dispatch: accounts@chilogistic.com
                 </li>
                 <li className="mb-3">
-                  <FaEnvelope className="me-2" /> Accounting: accounting@yourdomain.com
+                  <FaEnvelope className="me-2" /> Accounting: accounts@chilogistic.com
                 </li>
                 <li className="mb-3">
-                  <FaEnvelope className="me-2" /> Safety: safety@yourdomain.com
+                  <FaEnvelope className="me-2" /> Safety: accounts@chilogistic.com
                 </li>
               </ul>
             </div>

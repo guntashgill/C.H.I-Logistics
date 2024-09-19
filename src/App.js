@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -15,18 +14,23 @@ function App() {
   return (
     <Router>
       <Header />
-      <Hero />
-      {/* Main page sections with images in between */}
-      <AboutUs />
-      <SectionImage />  {/* Image between About Us and Services */}
-      <Services />
-      <SectionImage2 />  {/* Image between Services and Contact */}
-      <Contact />
-      <ApplyPage />
+      <Routes>
+        {/* Main route for the homepage */}
+        <Route path="/" element={
+          <>
+            <Hero />
+            <AboutUs />
+            <SectionImage /> {/* Image between About Us and Services */}
+            <Services />
+            <SectionImage2 /> {/* Image between Services and Contact */}
+            <Contact />
+          </>
+        } />
+        {/* Separate route for the Apply page */}
+        <Route path="/apply" element={<ApplyPage />} />
+      </Routes>
     </Router>
   );
 }
 
 export default App;
-
-
