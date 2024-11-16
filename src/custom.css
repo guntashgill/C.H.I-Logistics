@@ -250,5 +250,52 @@ body {
     font-size: 1rem;
     color: #6c757d;
   }
+
+  /* Customize the collapsed navbar when expanded */
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent dark background */
+  border-radius: 8px;
+  padding: 1rem;
+  position: absolute;
+  top: 100%; /* Expand below the navbar */
+  right: 0; /* Align to the right */
+  z-index: 1050; /* Ensure it's above other content */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Ensure the navbar links align properly */
+.custom-navbar .navbar-nav {
+  flex-direction: column; /* Stack the items vertically */
+}
+
+/* Remove unnecessary space from navbar items */
+.custom-navbar .nav-item {
+  margin-bottom: 10px; /* Space between items */
+}
+
+/* Optional hover effect for nav links */
+.custom-navbar .nav-link:hover {
+  text-decoration: underline;
+  color: #ffc107; /* Highlight color */
+}
+
+/* Toggler button adjustments */
+.navbar-toggler {
+  border: none; /* Remove border */
+  background: none; /* Remove background */
+  padding: 0.5rem;
+}
+
+/* Ensure smooth transition for toggler */
+.navbar-toggler:focus {
+  outline: none;
+}
+
+/* Transition for opening and closing */
+.collapse {
+  transition: all 0.3s ease-in-out;
+}
+
   
   
