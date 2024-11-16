@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 
-const Apply = () => {
+const ApplyPage = () => {
   const form = useRef();
+  const navigate = useNavigate();
 
   const sendApplication = (e) => {
     e.preventDefault();
@@ -16,6 +18,7 @@ const Apply = () => {
     .then(
       (result) => {
         alert('Application Sent Successfully!');
+        navigate('/'); // Redirect to the main page after success
       },
       (error) => {
         alert('Failed to Send Application. Please Try Again.');
@@ -78,4 +81,4 @@ const Apply = () => {
   );
 };
 
-export default Apply;
+export default ApplyPage;

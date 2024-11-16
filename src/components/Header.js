@@ -1,12 +1,28 @@
 import React, { useState } from 'react';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Header = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const location = useLocation();
 
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
+  };
+
+  const handleNavClick = (hash) => {
+    if (location.pathname === '/') {
+      // Smooth scroll to the section if already on the main page
+      const target = document.getElementById(hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to the main page with the hash for other pages
+      window.location.href = `/#${hash}`;
+    }
+    setIsNavbarOpen(false); // Close the navbar
   };
 
   return (
@@ -33,28 +49,53 @@ const Header = () => {
         <div
           className={`collapse navbar-collapse ${
             isNavbarOpen ? 'show custom-navbar' : ''
-          } justify-content-end`} // Opens to the right
+          } justify-content-end`}
         >
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link text-white" href="#about">
+              <a
+                href="#about"
+                className="nav-link text-white"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick('about');
+                }}
+              >
                 About Us
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#services">
+              <a
+                href="#services"
+                className="nav-link text-white"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick('services');
+                }}
+              >
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-white" href="#contact">
+              <a
+                href="#contact"
+                className="nav-link text-white"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick('contact');
+                }}
+              >
                 Contact Us
               </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/apply">
+              <RouterLink
+                className="nav-link text-white"
+                to="/apply"
+                onClick={() => setIsNavbarOpen(false)}
+              >
                 Drive For C.H.I
-              </Link>
+              </RouterLink>
             </li>
           </ul>
         </div>

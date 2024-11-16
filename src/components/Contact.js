@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
+import { Link } from 'react-router-dom'; // Import Link for routing
 
 const Contact = () => {
   const form = useRef();
@@ -28,7 +29,12 @@ const Contact = () => {
     <section id="contact" className="contact-form py-5">
       <div className="container">
         <h2 className="text-center mb-5">Contact Us</h2>
-        <p className="text-center mb-4">For inquiries or to apply for a driving position, please <a href="#">click here</a>.</p>
+        <p className="text-center mb-4">
+          For inquiries or to apply for a driving position, please{' '}
+          <Link to="/apply" className="text-primary">
+            click here
+          </Link>.
+        </p>
         <div className="row">
           <div className="col-md-6">
             <form ref={form} onSubmit={sendEmail}>
@@ -57,13 +63,30 @@ const Contact = () => {
               <p className="text-muted mb-4">Feel free to reach out to us for any inquiries or information.</p>
               <ul className="list-unstyled">
                 <li className="mb-3">
-                  <FaMapMarkerAlt className="me-2" /> 4616 S Cedar Ave, Fresno, CA 93725
+                  <a
+                    href="https://www.google.com/maps/place/4616+S+Cedar+Ave,+Fresno,+CA+93725"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-dark text-decoration-none"
+                  >
+                    <FaMapMarkerAlt className="me-2" /> 4616 S Cedar Ave, Fresno, CA 93725
+                  </a>
                 </li>
                 <li className="mb-3">
-                  <FaPhone className="me-2" /> Call or Text: (559) 497-1301
+                  <a
+                    href="tel:+15594971301"
+                    className="text-dark text-decoration-none"
+                  >
+                    <FaPhone className="me-2" /> Call or Text: (559) 497-1301
+                  </a>
                 </li>
                 <li className="mb-3">
-                  <FaEnvelope className="me-2" /> Email: accounts@chilogistic.com
+                  <a
+                    href="mailto:accounts@chilogistic.com"
+                    className="text-dark text-decoration-none"
+                  >
+                    <FaEnvelope className="me-2" /> Email: accounts@chilogistic.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -75,4 +98,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
