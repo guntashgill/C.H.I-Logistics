@@ -11,7 +11,7 @@ const Services = () => {
     {
       title: '24/7 Dispatch',
       description: 'Round-the-clock dispatch services to ensure your shipments are on time, every time.',
-      image: '/IMG_6667.JPG',
+      image: '/IMG_6667.jpg',
     },
     {
       title: 'Dedicated Services',
