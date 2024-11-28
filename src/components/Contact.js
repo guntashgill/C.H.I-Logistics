@@ -36,59 +36,69 @@ const Contact = () => {
           </Link>.
         </p>
         <div className="row">
-          <div className="col-md-6">
-            <form ref={form} onSubmit={sendEmail}>
-              <div className="mb-3">
-                <label className="form-label">Your Name *</label>
-                <input type="text" className="form-control" name="from_name" placeholder="Name" required />
+          {/* Contact Form Section */}
+          <div className="col-md-6 mb-4">
+            <div className="card shadow-sm">
+              <div className="card-body">
+                <h5 className="card-title">Send Us a Message</h5>
+                <form ref={form} onSubmit={sendEmail}>
+                  <div className="mb-3">
+                    <label className="form-label">Your Name *</label>
+                    <input type="text" className="form-control" name="from_name" placeholder="Name" required />
+                  </div>
+                  <div className="mb-3">
+                    <label className="form-label">Your Email *</label>
+                    <input type="email" className="form-control" name="from_email" placeholder="Email" required />
+                  </div>
+                  <div className="mb-3">
+                    <label className="form-label">Your Phone Number *</label>
+                    <input type="tel" className="form-control" name="from_phone" placeholder="Phone" required />
+                  </div>
+                  <div className="mb-3">
+                    <label className="form-label">Your Message *</label>
+                    <textarea className="form-control" name="message" rows="4" placeholder="Message" required></textarea>
+                  </div>
+                  <button type="submit" className="btn btn-dark w-100">Send Message</button>
+                </form>
               </div>
-              <div className="mb-3">
-                <label className="form-label">Your Email *</label>
-                <input type="email" className="form-control" name="from_email" placeholder="Email" required />
-              </div>
-              <div className="mb-3">
-                <label className="form-label">Your Phone Number *</label>
-                <input type="tel" className="form-control" name="from_phone" placeholder="Phone" required />
-              </div>
-              <div className="mb-3">
-                <label className="form-label">Your Message *</label>
-                <textarea className="form-control" name="message" rows="4" placeholder="Message" required></textarea>
-              </div>
-              <button type="submit" className="btn btn-dark w-100">Send Message</button>
-            </form>
+            </div>
           </div>
-          <div className="col-md-6">
-            <div className="contact-info">
-              <h5>Get in Touch</h5>
-              <p className="text-muted mb-4">Feel free to reach out to us for any inquiries or information.</p>
-              <ul className="list-unstyled">
-                <li className="mb-3">
-                  <a
-                    href="https://www.google.com/maps/place/4616+S+Cedar+Ave,+Fresno,+CA+93725"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-dark text-decoration-none"
-                  >
-                    <FaMapMarkerAlt className="me-2" /> 4616 S Cedar Ave, Fresno, CA 93725
-                  </a>
-                </li>
-                <li className="mb-3">
-                  <a
-                    href="tel:+15594971301"
-                    className="text-dark text-decoration-none"
-                  >
-                    <FaPhone className="me-2" /> Call or Text: (559) 497-1301
-                  </a>
-                </li>
-                <li className="mb-3">
-                  <a
-                    href="mailto:accounts@chilogistic.com"
-                    className="text-dark text-decoration-none"
-                  >
-                    <FaEnvelope className="me-2" /> Email: accounts@chilogistic.com
-                  </a>
-                </li>
-              </ul>
+
+          {/* Contact Information Section */}
+          <div className="col-md-6 mb-4">
+            <div className="card shadow-sm">
+              <div className="card-body">
+                <h5 className="card-title">Get in Touch</h5>
+                <p className="text-muted mb-4">Feel free to reach out to us for any inquiries or information.</p>
+                <ul className="list-unstyled">
+                  <li className="mb-3">
+                    <a
+                      href="https://www.google.com/maps/place/4616+S+Cedar+Ave,+Fresno,+CA+93725"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-dark text-decoration-none"
+                    >
+                      <FaMapMarkerAlt className="me-2" /> 4616 S Cedar Ave, Fresno, CA 93725
+                    </a>
+                  </li>
+                  <li className="mb-3">
+                    <a
+                      href="tel:+15594971301"
+                      className="text-dark text-decoration-none"
+                    >
+                      <FaPhone className="me-2" /> Call or Text: (559) 497-1301
+                    </a>
+                  </li>
+                  <li className="mb-3">
+                    <a
+                      href="mailto:accounts@chilogistic.com"
+                      className="text-dark text-decoration-none"
+                    >
+                      <FaEnvelope className="me-2" /> Email: accounts@chilogistic.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -42,46 +42,52 @@ body {
   .btn-primary:hover {
     background-color: #003730; /* Even darker shade of teal for hover */
   }
-  
-  .services {
-    padding: 6rem 2rem; /* Increase padding for more space */
-    background-color: #f8f9fa; /* Neutral background color */
-  }
-  
-  .services h2 {
-    font-size: 3rem; /* Larger font size for the heading */
-    color: #343a40; /* Dark text color */
-    margin-bottom: 1.5rem; /* Increase space below the heading */
-  }
-  
-  .services .card {
-    border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for emphasis */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-    margin-bottom: 2rem; /* Space between cards */
-  }
-  
-  .services .card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
-  }
-  
-  .services .card-title {
-    font-size: 1.5rem; /* Larger title size */
-    color: #004d40; /* Darker teal for titles */
-    margin-top: 1rem; /* Space above title */
-  }
-  
-  .services .card-text {
-    font-size: 1.15rem; /* Slightly larger text */
-    color: #6c757d; /* Gray text */
-    line-height: 1.7; /* Increased line height for readability */
-  }
-  
-  .services .card-img-top {
-    height: 250px; /* Increase height of images */
-    object-fit: cover;
-  }
+/* Services Section Enhancements */
+.services {
+  padding: 6rem 2rem;
+  background: #f8f9fa; /* Neutral background */
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  color: #004d40; /* Match brand colors */
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-img {
+  height: 200px; /* Set consistent image height */
+  object-fit: cover; /* Maintain aspect ratio and fit within container */
+}
+
+.service-title {
+  font-size: 1.25rem;
+  color: #004d40; /* Brand color for titles */
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+
   
   @media (min-width: 992px) {
     .services {
@@ -89,31 +95,47 @@ body {
     }
   }
 
-  /* Areas Serviced Section */
+/* Areas Serviced Section */
 .areas-serviced {
-    padding: 4rem 0;
-    background-color: #f8f9fa; /* Light background for contrast */
-    border-radius: 10px;
-  }
-  
-  .areas-serviced h2 {
-    font-size: 2.5rem;
-    color: #004d40; /* Dark teal for headings */
-    margin-bottom: 1.5rem;
-  }
-  
-  .areas-serviced p {
-    font-size: 1.25rem;
-    color: #6c757d; /* Gray text color */
-    margin-bottom: 2rem;
-  }
-  
-  .areas-serviced img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  }
+  padding: 5rem 0; /* Vertical padding for balance */
+  text-align: center; /* Center-align the content */
+  background-color: #f8f9fa; /* Light background for consistency */
+}
+
+.areas-serviced h2 {
+  font-size: 2.5rem;
+  color: #004d40; /* Teal heading */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.areas-serviced p {
+  font-size: 1.2rem;
+  color: #6c757d; /* Gray text for description */
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; /* Center the paragraph */
+  line-height: 1.8; /* Improved readability */
+}
+
+.areas-serviced img {
+  max-width: 90%; /* Scale the map appropriately */
+  height: auto;
+  border-radius: 10px; /* Optional: rounded edges */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.areas-serviced img:hover {
+  transform: scale(1.03); /* Slight zoom on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+
+
   
   
   .footer {
@@ -146,34 +168,72 @@ body {
     }
   }
   
-  .about-us {
-    padding: 6rem 2rem; /* Increase padding for more space */
-    background-color: #e9ecef; /* Light background color */
-    text-align: center; /* Center text for a balanced look */
-  }
-  
+/* About Us Section Enhancements */
+/* Enhanced About Us Section with Blueish Teal Gradient */
+.about-us {
+  padding: 8rem 2rem; /* Increase vertical padding */
+  background: linear-gradient(to bottom, #e0f7fa, #006d6f); /* Blueish teal gradient: light to darker */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center-align text */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a light shadow for depth */
+}
+
+.about-us h2 {
+  font-size: 3rem; /* Larger font for the heading */
+  color: #ffffff; /* White text for contrast */
+  font-weight: bold; /* Emphasize the heading */
+  margin-bottom: 2rem; /* Add space below heading */
+  text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 1px; /* Add spacing for a clean look */
+  border-bottom: 3px solid rgba(255, 255, 255, 0.6); /* Add a subtle underline for emphasis */
+  display: inline-block;
+}
+
+.about-us p {
+  font-size: 1.25rem; /* Increase paragraph size */
+  color: #ffffff; /* White text for readability */
+  line-height: 1.8; /* Comfortable spacing between lines */
+  margin-bottom: 2rem; /* Space below paragraphs */
+  max-width: 900px; /* Limit width for better readability */
+  margin-left: auto;
+  margin-right: auto; /* Center-align text */
+}
+
+.about-us .row {
+  justify-content: center; /* Center columns in the row */
+  gap: 2rem; /* Add spacing between the columns */
+}
+
+.about-us .col-md-6 {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for contrast */
+  padding: 2rem; /* Add padding inside columns */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effects */
+}
+
+.about-us .col-md-6:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.about-us .col-md-6 p {
+  font-size: 1.15rem; /* Adjust paragraph font size */
+  color: #004d40; /* Teal text for consistency */
+  line-height: 1.8; /* Comfortable line spacing */
+  margin-bottom: 1.5rem; /* Space below text */
+}
+
+@media (max-width: 768px) {
   .about-us h2 {
-    font-size: 3rem; /* Larger font size for the heading */
-    color: #343a40; /* Dark text color */
-    margin-bottom: 1.5rem; /* Increase space below the heading */
+      font-size: 2rem; /* Reduce heading size for smaller screens */
   }
-  
-  .about-us p {
-    font-size: 1.25rem; /* Larger font size for paragraph text */
-    color: #6c757d; /* Gray text color */
-    line-height: 1.8; /* Increase line height for readability */
-    margin-bottom: 2rem; /* Space between paragraphs */
+
+  .about-us .col-md-6 {
+      padding: 1.5rem; /* Reduce padding for smaller screens */
   }
-  
-  .about-us .row {
-    justify-content: center; /* Center content within the grid */
-  }
-  
-  @media (min-width: 992px) {
-    .about-us {
-      padding: 8rem 4rem; /* Further increase padding on larger screens */
-    }
-  }
+}
+
   
   /* Section for another image between services and contact */
   .section-image2 {
@@ -195,61 +255,100 @@ body {
       max-height: 800px; /* Increase height for larger screens */
     }
   }
+/* Contact Us Section */
 .contact-form {
-    background-color: #f8f9fa; /* Light background for contrast */
-    padding: 4rem 0;
-  }
-  
-  .contact-form h2 {
-    font-size: 2.5rem;
-    color: #343a40;
-    margin-bottom: 1.5rem;
-  }
-  
+  background-color: #f8f9fa;
+}
+
+.contact-form h2 {
+  font-size: 2.8rem;
+  color: #004d40;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.contact-form button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #003730;
+}
+
+.contact-info .card-body {
+  padding: 2rem;
+}
+
+.contact-info .card-title {
+  font-size: 1.75rem;
+  color: #004d40;
+  font-weight: bold;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-size: 1.1rem;
+  color: #343a40;
+}
+
+.contact-info a {
+  color: #004d40;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #003730;
+}
+
+.contact-info .me-2 {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .contact-form .form-control {
-    border-radius: 5px;
-    padding: 0.75rem 1rem;
     font-size: 1rem;
-    border: 1px solid #ced4da;
   }
-  
-  .contact-form .btn {
-    background-color: #004d40; /* Dark teal for buttons */
-    border: none;
-    padding: 0.75rem 1.25rem;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-  }
-  
-  .contact-form .btn:hover {
-    background-color: #003730; /* Darker teal on hover */
-  }
-  
-  .contact-info h5 {
-    font-size: 1.75rem;
-    color: #004d40; /* Dark teal */
-    margin-bottom: 1rem;
-  }
-  
-  .contact-info ul {
-    padding: 0;
-  }
-  
-  .contact-info ul li {
-    font-size: 1.1rem;
-    color: #343a40;
-    list-style: none;
-  }
-  
-  .contact-info ul li .me-2 {
-    margin-right: 10px; /* Space between icon and text */
-  }
-  
-  .contact-info .text-muted {
+
+  .contact-form button {
     font-size: 1rem;
-    color: #6c757d;
   }
+
+  .contact-info .card-body {
+    padding: 1.5rem;
+  }
+}
+
 
   /* Customize the collapsed navbar when expanded */
 .custom-navbar {
@@ -298,4 +397,64 @@ body {
 }
 
   
-  
+  /* Apply Page Section */
+.apply-page {
+  background-color: #f8f9fa;
+}
+
+.apply-page h2 {
+  font-size: 2.8rem;
+  color: #004d40;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.apply-page p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.apply-page .card {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.apply-page .card-title {
+  font-size: 1.75rem;
+  color: #004d40;
+  font-weight: bold;
+}
+
+.apply-page .form-label {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.apply-page .form-control {
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+}
+
+.apply-page .form-control:focus {
+  border-color: #004d40;
+  box-shadow: 0 0 5px rgba(0, 77, 64, 0.25);
+}
+
+.apply-page button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.apply-page button:hover {
+  background-color: #003730;
+}

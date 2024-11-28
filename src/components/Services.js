@@ -23,15 +23,19 @@ const Services = () => {
   return (
     <section id="services" className="services py-5">
       <div className="container">
-        <h2 className="text-center mb-5">Our Services</h2>
+        <h2 className="text-center mb-5 section-heading">Our Services</h2>
         <div className="row">
           {services.map((service, index) => (
             <div className="col-md-6 col-lg-4 mb-4" key={index}>
-              <div className="card h-100 shadow-sm">
-                <img src={service.image} className="card-img-top" alt={service.title} />
+              <div className="service-card card h-100 shadow">
+                <img
+                  src={service.image}
+                  className="card-img-top service-img"
+                  alt={service.title}
+                />
                 <div className="card-body text-center">
-                  <h5 className="card-title">{service.title}</h5>
-                  <p className="card-text">{service.description}</p>
+                  <h5 className="card-title service-title">{service.title}</h5>
+                  <p className="card-text service-description">{service.description}</p>
                 </div>
               </div>
             </div>
@@ -39,10 +43,12 @@ const Services = () => {
         </div>
 
         {/* Areas Serviced Section */}
-        <div className="areas-serviced text-center mt-5">
-          <h2 className="mb-4">Areas Serviced</h2>
-          <p className="mb-4">We proudly serve all 48 contiguous states in the U.S.</p>
-          <img src="/us-map.png" alt="Serviced Areas Map" className="img-fluid" style={{ maxWidth: '100%' }} />
+        <div className="areas-serviced">
+          <h2 className="text-center">Areas Serviced</h2>
+          <p className="text-center">
+            We proudly serve all 48 contiguous states in the U.S., ensuring reliable and efficient transportation services across the nation.
+          </p>
+          <img src="/us-map.png" alt="Serviced Areas Map" className="img-fluid" />
         </div>
       </div>
     </section>

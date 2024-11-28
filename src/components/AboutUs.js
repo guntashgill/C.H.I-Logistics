@@ -3,33 +3,32 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <section id="about" className="about-us py-5"> {/* ID matches href in navbar */}
+    <section id="about" className="about-us py-5">
+      {/* Matches navbar href */}
       <div className="container">
         <h2 className="text-center mb-4">About Us</h2>
         <p className="text-center mb-5">
-          C.H.I has been a leader in the transportation industry for over 20 years. 
-          We pride ourselves on delivering reliable, efficient, and professional services tailored 
-          to meet the unique needs of our clients. Our dedicated team of professionals ensures that 
-          every shipment is handled with the utmost care, commitment, and excellence.
+          For over two decades, C.H.I has been a trusted leader in the transportation industry. 
+          We specialize in delivering reliable, efficient, and tailored services to meet the 
+          diverse needs of our clients. Our team is dedicated to handling every shipment with 
+          exceptional care, professionalism, and commitment to excellence.
         </p>
         <div className="row">
           <div className="col-md-6">
             <p>
-              Our fleet of modern trucks is equipped with the latest technology to ensure that 
-              your goods arrive on time, every time. We offer a range of services including 
-              over-the-road (OTR) transportation, dedicated services, expedited shipping, and 
-              24/7 dispatch support. At C.H.I, we understand the importance of 
-              reliability and customer satisfaction, which is why we strive to exceed expectations 
-              with every delivery.
+              Equipped with a fleet of state-of-the-art trucks and cutting-edge technology, 
+              we guarantee timely deliveries, every time. Our services include over-the-road (OTR) 
+              transportation, dedicated logistics, expedited shipping, and round-the-clock dispatch support. 
+              At C.H.I, reliability and customer satisfaction aren’t just goals—they’re our promise.
             </p>
           </div>
           <div className="col-md-6">
             <p>
-              Our mission is to be the transportation partner of choice, known for our commitment 
-              to safety, sustainability, and service excellence. We are constantly innovating and 
-              adapting to the evolving needs of the industry, and our team is always ready to 
-              tackle new challenges. Join us on our journey as we continue to set the standard in 
-              the trucking industry.
+              Our mission is to be the transportation partner of choice, recognized for our 
+              unwavering focus on safety, sustainability, and service excellence. As industry needs evolve, 
+              we continuously innovate and adapt to stay ahead. Whether it’s overcoming logistical challenges 
+              or embracing new opportunities, our team is ready to deliver. Join us as we redefine standards 
+              in the trucking industry.
             </p>
           </div>
         </div>

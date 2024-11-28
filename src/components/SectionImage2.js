@@ -5,7 +5,7 @@ const SectionImage2 = () => {
   return (
     <div className="section-image2">
       <img 
-        src="/IMG_6665.JPG" 
+        src="/image3.png" 
         alt="Section Divider" 
         className="img-fluid w-100" 
         style={{ objectFit: 'cover' }} 
