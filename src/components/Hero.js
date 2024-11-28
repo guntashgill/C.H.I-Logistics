@@ -6,7 +6,7 @@ const Hero = () => {
     <div 
       className="hero" 
       style={{ 
-        backgroundImage: `url(/IMG_6666.JPG)`, // Use the path of your image from the public folder
+        backgroundImage: `url(/mainimage.png)`, // Use the path of your image from the public folder
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         height: '100vh', // Full viewport height

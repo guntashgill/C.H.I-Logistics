@@ -6,12 +6,12 @@ const Services = () => {
     {
       title: 'Expedited Shipping',
       description: 'Fast and reliable expedited shipping for urgent delivery needs across the country.',
-      image: '/IMG_6665.JPG',
+      image: '/image2.png',
     },
     {
       title: '24/7 Dispatch',
       description: 'Round-the-clock dispatch services to ensure your shipments are on time, every time.',
-      image: '/IMG_6667.jpg',
+      image: '/image3.png',
     },
     {
       title: 'Dedicated Services',
