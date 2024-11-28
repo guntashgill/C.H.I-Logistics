@@ -10,10 +10,10 @@ const ApplyPage = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_mqvlr3a', // Replace with your EmailJS Service ID
-      'template_qmi6bqj', // Replace with your EmailJS Template ID
+      'service_on93dvd', // Replace with your EmailJS Service ID
+      'template_tjl591e', // Replace with your EmailJS Template ID
       form.current,
-      'n1brq6LJfINz3naGv' // Replace with your EmailJS Public Key (User ID)
+      'LFV7eQdiRwdG4jPTE' // Replace with your EmailJS Public Key (User ID)
     )
     .then(
       (result) => {

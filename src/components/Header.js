@@ -32,12 +32,14 @@ const Header = () => {
           <img src="/logo.png" alt="Logo" className="img-fluid" style={{ maxHeight: '50px' }} />
         </a>
         <div className="d-flex align-items-center">
+          {/*
           <a href="https://www.instagram.com" className="text-white mx-2">
             <FaInstagram size={24} />
           </a>
           <a href="https://www.facebook.com" className="text-white mx-2">
             <FaFacebook size={24} />
           </a>
+          */}
         </div>
         <button
           className="navbar-toggler"
