@@ -1,9 +1,8 @@
-/// src/components/SectionImage.js
 import React from 'react';
 
 const SectionImage = () => {
   return (
-    <div className="section-image">
+    <div className="section-image parallax" data-aos="fade-in">
       <img 
         src="/image2.png" 
         alt="Section Divider" 
@@ -15,4 +14,3 @@ const SectionImage = () => {
 };
 
 export default SectionImage;
-

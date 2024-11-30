@@ -48,7 +48,7 @@ const Services = () => {
           <p className="text-center">
             We proudly serve all 48 contiguous states in the U.S., ensuring reliable and efficient transportation services across the nation.
           </p>
-          <img src="/us-map.png" alt="Serviced Areas Map" className="img-fluid" />
+          <img src="/tealmap.png" alt="Serviced Areas Map" className="img-fluid" />
         </div>
       </div>
     </section>

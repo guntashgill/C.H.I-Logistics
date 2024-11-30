@@ -458,3 +458,55 @@ body {
 .apply-page button:hover {
   background-color: #003730;
 }
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Parallax Effect */
+.parallax {
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.parallax img {
+  transform: translateY(-10%);
+  transition: transform 0.8s ease-in-out;
+}
+
+.parallax:hover img {
+  transform: translateY(0);
+}
+
+/* AOS Animation Tweaks */
+[data-aos="fade-in"] {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+[data-aos="slide-up"] {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+[data-aos="fade-up"] {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+[data-aos="zoom-in"] {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
